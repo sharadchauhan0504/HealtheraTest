@@ -1,0 +1,633 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8A2CAEB72B233DA500C0B3C0 /* HealthEraTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2CAEB62B233DA500C0B3C0 /* HealthEraTestApp.swift */; };
+		8A2CAEB92B233DA500C0B3C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2CAEB82B233DA500C0B3C0 /* ContentView.swift */; };
+		8A2CAEBB2B233DA700C0B3C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A2CAEBA2B233DA700C0B3C0 /* Assets.xcassets */; };
+		8A2CAEBE2B233DA700C0B3C0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A2CAEBD2B233DA700C0B3C0 /* Preview Assets.xcassets */; };
+		8A2CAEC82B233DA700C0B3C0 /* HealthEraTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2CAEC72B233DA700C0B3C0 /* HealthEraTestTests.swift */; };
+		8A2CAED22B233DA700C0B3C0 /* HealthEraTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2CAED12B233DA700C0B3C0 /* HealthEraTestUITests.swift */; };
+		8A2CAED42B233DA700C0B3C0 /* HealthEraTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2CAED32B233DA700C0B3C0 /* HealthEraTestUITestsLaunchTests.swift */; };
+		8A2CAEE42B233DC500C0B3C0 /* remedies.json in Resources */ = {isa = PBXBuildFile; fileRef = 8A2CAEE12B233DC500C0B3C0 /* remedies.json */; };
+		8A2CAEE52B233DC500C0B3C0 /* ExampleResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2CAEE22B233DC500C0B3C0 /* ExampleResponse.swift */; };
+		8A2CAEE62B233DC500C0B3C0 /* adherence.json in Resources */ = {isa = PBXBuildFile; fileRef = 8A2CAEE32B233DC500C0B3C0 /* adherence.json */; };
+		8A2CAEEA2B233DCF00C0B3C0 /* RawJSONToData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2CAEE82B233DCF00C0B3C0 /* RawJSONToData.swift */; };
+		8A2CAEEB2B233DCF00C0B3C0 /* ResponseManipulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2CAEE92B233DCF00C0B3C0 /* ResponseManipulation.swift */; };
+		8A2CAEED2B233E8300C0B3C0 /* ResponseDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2CAEEC2B233E8300C0B3C0 /* ResponseDecoder.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8A2CAEC42B233DA700C0B3C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A2CAEAB2B233DA500C0B3C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A2CAEB22B233DA500C0B3C0;
+			remoteInfo = HealthEraTest;
+		};
+		8A2CAECE2B233DA700C0B3C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A2CAEAB2B233DA500C0B3C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A2CAEB22B233DA500C0B3C0;
+			remoteInfo = HealthEraTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8A2CAEB32B233DA500C0B3C0 /* HealthEraTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthEraTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A2CAEB62B233DA500C0B3C0 /* HealthEraTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthEraTestApp.swift; sourceTree = "<group>"; };
+		8A2CAEB82B233DA500C0B3C0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8A2CAEBA2B233DA700C0B3C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8A2CAEBD2B233DA700C0B3C0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8A2CAEC32B233DA700C0B3C0 /* HealthEraTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HealthEraTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A2CAEC72B233DA700C0B3C0 /* HealthEraTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthEraTestTests.swift; sourceTree = "<group>"; };
+		8A2CAECD2B233DA700C0B3C0 /* HealthEraTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HealthEraTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A2CAED12B233DA700C0B3C0 /* HealthEraTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthEraTestUITests.swift; sourceTree = "<group>"; };
+		8A2CAED32B233DA700C0B3C0 /* HealthEraTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthEraTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8A2CAEE12B233DC500C0B3C0 /* remedies.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = remedies.json; sourceTree = "<group>"; };
+		8A2CAEE22B233DC500C0B3C0 /* ExampleResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleResponse.swift; sourceTree = "<group>"; };
+		8A2CAEE32B233DC500C0B3C0 /* adherence.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = adherence.json; sourceTree = "<group>"; };
+		8A2CAEE82B233DCF00C0B3C0 /* RawJSONToData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RawJSONToData.swift; sourceTree = "<group>"; };
+		8A2CAEE92B233DCF00C0B3C0 /* ResponseManipulation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseManipulation.swift; sourceTree = "<group>"; };
+		8A2CAEEC2B233E8300C0B3C0 /* ResponseDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseDecoder.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8A2CAEB02B233DA500C0B3C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A2CAEC02B233DA700C0B3C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A2CAECA2B233DA700C0B3C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8A2CAEAA2B233DA500C0B3C0 = {
+			isa = PBXGroup;
+			children = (
+				8A2CAEB52B233DA500C0B3C0 /* HealthEraTest */,
+				8A2CAEC62B233DA700C0B3C0 /* HealthEraTestTests */,
+				8A2CAED02B233DA700C0B3C0 /* HealthEraTestUITests */,
+				8A2CAEB42B233DA500C0B3C0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8A2CAEB42B233DA500C0B3C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8A2CAEB32B233DA500C0B3C0 /* HealthEraTest.app */,
+				8A2CAEC32B233DA700C0B3C0 /* HealthEraTestTests.xctest */,
+				8A2CAECD2B233DA700C0B3C0 /* HealthEraTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8A2CAEB52B233DA500C0B3C0 /* HealthEraTest */ = {
+			isa = PBXGroup;
+			children = (
+				8A2CAEE72B233DCE00C0B3C0 /* Helpers */,
+				8A2CAEE02B233DC500C0B3C0 /* Response */,
+				8A2CAEB62B233DA500C0B3C0 /* HealthEraTestApp.swift */,
+				8A2CAEB82B233DA500C0B3C0 /* ContentView.swift */,
+				8A2CAEBA2B233DA700C0B3C0 /* Assets.xcassets */,
+				8A2CAEBC2B233DA700C0B3C0 /* Preview Content */,
+			);
+			path = HealthEraTest;
+			sourceTree = "<group>";
+		};
+		8A2CAEBC2B233DA700C0B3C0 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8A2CAEBD2B233DA700C0B3C0 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8A2CAEC62B233DA700C0B3C0 /* HealthEraTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				8A2CAEC72B233DA700C0B3C0 /* HealthEraTestTests.swift */,
+			);
+			path = HealthEraTestTests;
+			sourceTree = "<group>";
+		};
+		8A2CAED02B233DA700C0B3C0 /* HealthEraTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8A2CAED12B233DA700C0B3C0 /* HealthEraTestUITests.swift */,
+				8A2CAED32B233DA700C0B3C0 /* HealthEraTestUITestsLaunchTests.swift */,
+			);
+			path = HealthEraTestUITests;
+			sourceTree = "<group>";
+		};
+		8A2CAEE02B233DC500C0B3C0 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				8A2CAEE12B233DC500C0B3C0 /* remedies.json */,
+				8A2CAEE22B233DC500C0B3C0 /* ExampleResponse.swift */,
+				8A2CAEE32B233DC500C0B3C0 /* adherence.json */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		8A2CAEE72B233DCE00C0B3C0 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8A2CAEE82B233DCF00C0B3C0 /* RawJSONToData.swift */,
+				8A2CAEE92B233DCF00C0B3C0 /* ResponseManipulation.swift */,
+				8A2CAEEC2B233E8300C0B3C0 /* ResponseDecoder.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8A2CAEB22B233DA500C0B3C0 /* HealthEraTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A2CAED72B233DA700C0B3C0 /* Build configuration list for PBXNativeTarget "HealthEraTest" */;
+			buildPhases = (
+				8A2CAEAF2B233DA500C0B3C0 /* Sources */,
+				8A2CAEB02B233DA500C0B3C0 /* Frameworks */,
+				8A2CAEB12B233DA500C0B3C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HealthEraTest;
+			productName = HealthEraTest;
+			productReference = 8A2CAEB32B233DA500C0B3C0 /* HealthEraTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8A2CAEC22B233DA700C0B3C0 /* HealthEraTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A2CAEDA2B233DA700C0B3C0 /* Build configuration list for PBXNativeTarget "HealthEraTestTests" */;
+			buildPhases = (
+				8A2CAEBF2B233DA700C0B3C0 /* Sources */,
+				8A2CAEC02B233DA700C0B3C0 /* Frameworks */,
+				8A2CAEC12B233DA700C0B3C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8A2CAEC52B233DA700C0B3C0 /* PBXTargetDependency */,
+			);
+			name = HealthEraTestTests;
+			productName = HealthEraTestTests;
+			productReference = 8A2CAEC32B233DA700C0B3C0 /* HealthEraTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8A2CAECC2B233DA700C0B3C0 /* HealthEraTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A2CAEDD2B233DA700C0B3C0 /* Build configuration list for PBXNativeTarget "HealthEraTestUITests" */;
+			buildPhases = (
+				8A2CAEC92B233DA700C0B3C0 /* Sources */,
+				8A2CAECA2B233DA700C0B3C0 /* Frameworks */,
+				8A2CAECB2B233DA700C0B3C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8A2CAECF2B233DA700C0B3C0 /* PBXTargetDependency */,
+			);
+			name = HealthEraTestUITests;
+			productName = HealthEraTestUITests;
+			productReference = 8A2CAECD2B233DA700C0B3C0 /* HealthEraTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8A2CAEAB2B233DA500C0B3C0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					8A2CAEB22B233DA500C0B3C0 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					8A2CAEC22B233DA700C0B3C0 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 8A2CAEB22B233DA500C0B3C0;
+					};
+					8A2CAECC2B233DA700C0B3C0 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 8A2CAEB22B233DA500C0B3C0;
+					};
+				};
+			};
+			buildConfigurationList = 8A2CAEAE2B233DA500C0B3C0 /* Build configuration list for PBXProject "HealthEraTest" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8A2CAEAA2B233DA500C0B3C0;
+			productRefGroup = 8A2CAEB42B233DA500C0B3C0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8A2CAEB22B233DA500C0B3C0 /* HealthEraTest */,
+				8A2CAEC22B233DA700C0B3C0 /* HealthEraTestTests */,
+				8A2CAECC2B233DA700C0B3C0 /* HealthEraTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8A2CAEB12B233DA500C0B3C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A2CAEE42B233DC500C0B3C0 /* remedies.json in Resources */,
+				8A2CAEE62B233DC500C0B3C0 /* adherence.json in Resources */,
+				8A2CAEBE2B233DA700C0B3C0 /* Preview Assets.xcassets in Resources */,
+				8A2CAEBB2B233DA700C0B3C0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A2CAEC12B233DA700C0B3C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A2CAECB2B233DA700C0B3C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8A2CAEAF2B233DA500C0B3C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A2CAEB92B233DA500C0B3C0 /* ContentView.swift in Sources */,
+				8A2CAEED2B233E8300C0B3C0 /* ResponseDecoder.swift in Sources */,
+				8A2CAEB72B233DA500C0B3C0 /* HealthEraTestApp.swift in Sources */,
+				8A2CAEEB2B233DCF00C0B3C0 /* ResponseManipulation.swift in Sources */,
+				8A2CAEE52B233DC500C0B3C0 /* ExampleResponse.swift in Sources */,
+				8A2CAEEA2B233DCF00C0B3C0 /* RawJSONToData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A2CAEBF2B233DA700C0B3C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A2CAEC82B233DA700C0B3C0 /* HealthEraTestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A2CAEC92B233DA700C0B3C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A2CAED22B233DA700C0B3C0 /* HealthEraTestUITests.swift in Sources */,
+				8A2CAED42B233DA700C0B3C0 /* HealthEraTestUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8A2CAEC52B233DA700C0B3C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8A2CAEB22B233DA500C0B3C0 /* HealthEraTest */;
+			targetProxy = 8A2CAEC42B233DA700C0B3C0 /* PBXContainerItemProxy */;
+		};
+		8A2CAECF2B233DA700C0B3C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8A2CAEB22B233DA500C0B3C0 /* HealthEraTest */;
+			targetProxy = 8A2CAECE2B233DA700C0B3C0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8A2CAED52B233DA700C0B3C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8A2CAED62B233DA700C0B3C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8A2CAED82B233DA700C0B3C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HealthEraTest/Preview Content\"";
+				DEVELOPMENT_TEAM = Z868TG7UDB;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sharad.HealthEraTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8A2CAED92B233DA700C0B3C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HealthEraTest/Preview Content\"";
+				DEVELOPMENT_TEAM = Z868TG7UDB;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sharad.HealthEraTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8A2CAEDB2B233DA700C0B3C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z868TG7UDB;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sharad.HealthEraTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HealthEraTest.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HealthEraTest";
+			};
+			name = Debug;
+		};
+		8A2CAEDC2B233DA700C0B3C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z868TG7UDB;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sharad.HealthEraTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HealthEraTest.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HealthEraTest";
+			};
+			name = Release;
+		};
+		8A2CAEDE2B233DA700C0B3C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z868TG7UDB;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sharad.HealthEraTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HealthEraTest;
+			};
+			name = Debug;
+		};
+		8A2CAEDF2B233DA700C0B3C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z868TG7UDB;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sharad.HealthEraTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HealthEraTest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8A2CAEAE2B233DA500C0B3C0 /* Build configuration list for PBXProject "HealthEraTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A2CAED52B233DA700C0B3C0 /* Debug */,
+				8A2CAED62B233DA700C0B3C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A2CAED72B233DA700C0B3C0 /* Build configuration list for PBXNativeTarget "HealthEraTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A2CAED82B233DA700C0B3C0 /* Debug */,
+				8A2CAED92B233DA700C0B3C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A2CAEDA2B233DA700C0B3C0 /* Build configuration list for PBXNativeTarget "HealthEraTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A2CAEDB2B233DA700C0B3C0 /* Debug */,
+				8A2CAEDC2B233DA700C0B3C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A2CAEDD2B233DA700C0B3C0 /* Build configuration list for PBXNativeTarget "HealthEraTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A2CAEDE2B233DA700C0B3C0 /* Debug */,
+				8A2CAEDF2B233DA700C0B3C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8A2CAEAB2B233DA500C0B3C0 /* Project object */;
+}
